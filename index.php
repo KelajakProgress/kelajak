@@ -1,6 +1,1 @@
 salom
-new
-
-
-
-wesrdtvbhujkl
