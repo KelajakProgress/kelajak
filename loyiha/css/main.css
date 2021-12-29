@@ -9,7 +9,14 @@ body{
 	height: 300px;
 	perspective: 200px;
 }
+.container{
+	background-image: url("../rasmlar/vc.png");
+	background-size: 400px;
+	background-repeat: no-repeat;	
+	background-position: -150px 0px;
+}
 .carousel .carousel-item{
+	z-index: 10;
 	width: 300px;
 }
 .carousel .carousel-item img{
