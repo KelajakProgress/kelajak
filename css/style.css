@@ -219,6 +219,7 @@
    }
    .student{
      right: 0px;
+     justify-content: start;
    }
    .student p{
    display: none;
