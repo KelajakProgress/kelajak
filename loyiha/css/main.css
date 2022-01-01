@@ -16,8 +16,10 @@ body{
 	background-position: -150px 0px;
 }
 .carousel .carousel-item{
-	z-index: 10;
 	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .carousel .carousel-item img{
 	width: 100%;
@@ -41,4 +43,59 @@ p{
 .row span , i{
 	cursor: pointer; 
 	margin-left: 4px;
+}
+@media (max-width:447px ){
+	.carousel{
+		height: 100px;
+	}
+	.carousel .carousel-item{
+		width: 50px !important;
+	}
+	h2{
+		margin-left: 40px;
+		font-size: 14px;
+	}
+	p{
+		margin-left: 40px;
+		font-size: 10px;
+	}
+	.row span , .row span i{
+		font-size: 12px;
+	}
+}
+@media (min-width:447px ) and (max-width:769px) {
+	.carousel{
+		height: 200px;
+	}
+	.carousel .carousel-item{
+		width: 150px !important;
+	}
+	h2{
+		margin-left: 50px;
+		font-size: 20px;
+	}
+	p{
+		margin-left: 50px;
+		font-size: 15px;
+	}
+	.row span , .row span i{
+		font-size: 17px;
+	}
+}
+@media (min-width:990px ) and (max-width:1200px) {
+	.carousel{
+		height: 250px;
+	}
+	.carousel .carousel-item{
+		width: 200px !important;
+	}
+	h2{
+		font-size: 24px;
+	}
+	p{
+		font-size: 17px;
+	}
+	.row span , .row span i{
+		font-size: 18px;
+	}
 }
