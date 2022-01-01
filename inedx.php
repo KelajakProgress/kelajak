@@ -76,8 +76,7 @@
       <div class="row">
         <div class="col-lg-7">
           <div class="banner text-center">
-            <img src="img/banner.png" class="img-fluid w-75" />
-            <img src="img/vektor-1.png" class="img-fluid icon-1" />
+           <img src="img/Banner0.png" class="img-fluid">
 
             <div class="student">
               <img src="img/users/01.jpg" class="rounded-circle r-img" title="Alecsandr"/>
