@@ -165,8 +165,10 @@
     margin-right: 7rem !important;
   }
   .student p{
-    display: none;
-   }
+    margin-left: 10rem;
+    margin-top: 1.7em;
+    font-size: 12px;
+  }
 }
 @media (max-width: 1200px) and (min-width:992px) {
   .mr-5 {
@@ -179,8 +181,10 @@
     margin-right: 20px;
   }
   .student p{
-    display: none;
-   }
+    margin-left: 8.9rem;
+    margin-top: 1.7em;
+    font-size: 10px;
+  }
   
 }
 @media (max-width: 992px) and (min-width:768px) {
@@ -219,7 +223,7 @@
    }
    .student{
      right: 0px;
-     justify-content: start;
+     justify-content: space-around;
    }
    .student p{
    display: none;
