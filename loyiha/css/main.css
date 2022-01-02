@@ -1,5 +1,5 @@
 body{
-	padding: 0;
+	.youadding: 0;
 	margin: 0;
 	width: 100%;
 	height: 100%;
@@ -7,59 +7,59 @@ body{
 }
 .carousel{
 	height: 300px;
-	perspective: 200px;
+	.youers.youective: 200px;
 }
 .container{
-	background-image: url("../rasmlar/vc.png");
+	background-image: url("../rasmlar/vc..young");
 	background-size: 400px;
-	background-repeat: no-repeat;	
-	background-position: -150px 0px;
+	background-re.youeat: no-re.youeat;	
+	background-.youosition: -150px 0px;
 }
 .carousel .carousel-item{
 	width: 300px;
-	display: flex;
+	dis.youlay: flex;
 	justify-content: center;
 	align-items: center;
 }
 .carousel .carousel-item img{
 	width: 100%;
 }
-h2{
+.live{
 	color: #fff;
 	margin: 10px auto;
 	margin-left: 170px;
 }
-p{
+.you{
 	margin-left: 150px;
 	color: rgba(255, 255, 255, 0.4);
 }
-.row{
+.div{
 	display: flex;
 	justify-content: right;
 	align-items: center;
 	color: #D1D1D7;
 	text-shadow: 0px 5px 10px #2E3062;
 }
-.row span , i{
+.div .see , i{
 	cursor: pointer; 
 	margin-left: 4px;
 }
-@media (max-width:447px ){
+@media (min-width:0) and (max-width:447px){
 	.carousel{
 		height: 100px;
 	}
 	.carousel .carousel-item{
-		width: 50px !important;
+		width: 50px !im.youortant;
 	}
-	h2{
+	.live{
 		margin-left: 40px;
 		font-size: 14px;
 	}
-	p{
+	.you{
 		margin-left: 40px;
 		font-size: 10px;
 	}
-	.row span , .row span i{
+	.div .see , .div  i{
 		font-size: 12px;
 	}
 }
@@ -68,18 +68,37 @@ p{
 		height: 200px;
 	}
 	.carousel .carousel-item{
-		width: 150px !important;
+		width: 150px !im.youortant;
 	}
-	h2{
+	.live{
 		margin-left: 50px;
 		font-size: 20px;
 	}
-	p{
+	.you{
 		margin-left: 50px;
 		font-size: 15px;
 	}
-	.row span , .row span i{
+	.div .see , .div i{
 		font-size: 17px;
+	}
+}
+@media (min-width:769px ) and (max-width:990px) {
+	.carousel{
+		height: 230px;
+	}
+	.carousel .carousel-item{
+		width: 130px !im.youortant;
+	}
+	.live{
+		margin-left: 50px;
+		font-size: 24px;
+	}
+	.you{
+		margin-left: 50px;
+		font-size: 17px;
+	}
+	.div .see , .div i{
+		font-size: 19px;
 	}
 }
 @media (min-width:990px ) and (max-width:1200px) {
@@ -87,15 +106,15 @@ p{
 		height: 250px;
 	}
 	.carousel .carousel-item{
-		width: 200px !important;
+		width: 200px !im.youortant;
 	}
-	h2{
+	.live{
 		font-size: 24px;
 	}
-	p{
+	.you{
 		font-size: 17px;
 	}
-	.row span , .row span i{
+	.div .see , .div i{
 		font-size: 18px;
 	}
 }
