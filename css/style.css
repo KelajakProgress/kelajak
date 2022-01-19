@@ -14,7 +14,6 @@
   background-color: #171836 !important;
   color: aliceblue !important;
 }
-
 .dropdown-item,
 .dropdown-menu {
   width: 80px !important;
@@ -79,8 +78,6 @@
   width: 40%;
   height: 15%;
   display: flex;
-  /* justify-content: start; */
-  /* border: 1px solid #fff; */
   background: rgba(255, 255, 255, 0.068);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.301);
   backdrop-filter: blur(15px);
@@ -95,7 +92,7 @@
   margin-top: 1em;
 }
 .r-img{
-  width: 15%;
+  /* width: 15%; */
   cursor: pointer;
 }
 .student img{
@@ -127,6 +124,9 @@
 }
 .mt-6{
   margin-top: 6rem !important;
+}
+.acc-hv{
+  display: none !important;
 }
 
 @media (max-width: 1400px) and (min-width:1200px) {
