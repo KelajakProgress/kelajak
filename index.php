@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Snauw</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -174,42 +175,227 @@
 					</div>
 				</div>
 				<div class="row mt-5">
-					<div class="col-md-3 my-5">
-						<div class="card bg-dark border-secondary">
-							<div class="card-body">
-								<div class="text-center">
-									<img src="img/courses/01.png" class="img-fluid rounded">
-								</div>
-								<p class="text-success mt-3">Technology</p>
-								<h5>
-									Digital Marketing Strategy
-								</h5>
-								<p class="text-secondary">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								</p>
-							</div>
-							<div class="card-footer border-top pt-3">
-								<div class="d-flex">
-									<img src="img/users/01.jpg" class="rounded-circle r-img">
-									<div class="ms-3">
-										<span><b>Jorey Piere</b></span> <br>
-										<span class="text-secondary">Mentor</span>
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-3 my-5">
+								<div class="card bg-dark border-secondary">
+									<div class="card-body">
+										<div class="text-center">
+											<img src="img/courses/01.png" class="img-fluid rounded">
+										</div>
+										<p class="text-success mt-3">Technology</p>
+										<h5>
+											Digital Marketing Strategy
+										</h5>
+										<p class="text-secondary">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										</p>
+									</div>
+									<div class="card-footer border-top border-secondary pt-3">
+										<div class="d-flex">
+											<img src="img/users/01.jpg" class="rounded-circle r-img">
+											<div class="ms-3">
+												<span><b>Jorey Piere</b></span> <br>
+												<span class="text-secondary">Mentor</span>
+											</div>
+										</div>
+										<div class=" text-center mt-5 mb-2">
+											<button class="btn btn-danger">Access Class</button>
+										</div>
 									</div>
 								</div>
-								<div class="text-center mt-5 mb-2 acc-hv">
-									<button class="btn btn-danger">Access Class</button>
+							</div>
+							<div class="col-lg-3 my-5">
+								<div class="card bg-dark border-secondary">
+									<div class="card-body">
+										<div class="text-center">
+											<img src="img/courses/04.png" class="img-fluid rounded">
+										</div>
+										<p class="text-success mt-3">Technology</p>
+										<h5>
+											Digital Marketing Strategy
+										</h5>
+										<p class="text-secondary">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										</p>
+									</div>
+									<div class="card-footer border-top border-secondary pt-3">
+										<div class="d-flex">
+											<img src="img/users/1.jpg" class="rounded-circle r-img">
+											<div class="ms-3">
+												<span><b>Jorey Piere</b></span> <br>
+												<span class="text-secondary">Mentor</span>
+											</div>
+										</div>
+										<div class=" text-center mt-5 mb-2">
+											<button class="btn btn-danger">Access Class</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 my-5">
+								<div class="card bg-dark border-secondary">
+									<div class="card-body">
+										<div class="text-center">
+											<img src="img/courses/03.png" class="img-fluid rounded">
+										</div>
+										<p class="text-success mt-3">Technology</p>
+										<h5>
+											Digital Marketing Strategy
+										</h5>
+										<p class="text-secondary">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										</p>
+									</div>
+									<div class="card-footer border-top border-secondary pt-3">
+										<div class="d-flex">
+											<img src="img/users/4.jpg" class="rounded-circle r-img">
+											<div class="ms-3">
+												<span><b>Jorey Piere</b></span> <br>
+												<span class="text-secondary">Mentor</span>
+											</div>
+										</div>
+										<div class=" text-center mt-5 mb-2">
+											<button class="btn btn-danger">Access Class</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 my-5">
+								<div class="card bg-dark border-secondary">
+									<div class="card-body">
+										<div class="text-center">
+											<img src="img/courses/02.png" class="img-fluid rounded">
+										</div>
+										<p class="text-success mt-3">Technology</p>
+										<h5>
+											Digital Marketing Strategy
+										</h5>
+										<p class="text-secondary">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										</p>
+									</div>
+									<div class="card-footer border-top border-secondary pt-3">
+										<div class="d-flex">
+											<img src="img/users/8.jpg" class="rounded-circle r-img">
+											<div class="ms-3">
+												<span><b>Jorey Piere</b></span> <br>
+												<span class="text-secondary">Mentor</span>
+											</div>
+										</div>
+										<div class=" text-center mt-5 mb-2">
+											<button class="btn btn-danger">Access Class</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="text-center my-5">
+						<button class="btn btn-outline-danger">Show All Courses</button>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- End Card -->
+
+		<!-- Start Carousel -->
+
+		<div class="row my-5">
+			<div class="col-md-12">
+				<div class="row my-5 text-center">
+					<div class="col-lg-12">
+						<h1>
+							Live Online Webinar
+						</h1>
+						<p class="text-secondary my-3">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisicing elit.
+						</p>
+					</div>
+				</div>
+				<div class="row my-5">
+					<div class="col-md-6 text-center offset-3">
+						<div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active text-center">
+									<img src="img/carousel/01.png" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item text-center">
+									<img src="img/carousel/01.png" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item text-center">
+									<img src="img/carousel/01.png" class="d-block w-100" alt="...">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- End Carousel -->
+
+		<!-- Start Sub -->
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row my-5 text-center">
+					<div class="col-lg-12">
+						<h1>
+							Courses Pricing
+						</h1>
+						<p class="text-secondary my-3">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisicing elit.
+						</p>
+					</div>
+
+				</div>
+				<div class="row my-5">
+					<div class="col-md-4 pricing">
+						<div class="row">
+							<div class="col-2 mt-2">
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAe9JREFUSEvFlkFOwzAQRf+A95Qb0BPADShbaEUQQWJHuUE5AeUEwAkoO6SmUqqkbIETACeAI9A1EYNckipNM05iWtWrKPbM8x97xkNY0aAVcWENbvGxozcd0MC32bwVuMluA8BTDNwLyXuuCrcFa9BuDHsOydtbOtjh060I0UcapKDqPj18VoFXVtxit8fAWRpCwH1AXntp4Dy1CUwh2vTJ/yoLr6S4yW4XwKXg/CokT8+XGqXBDju1CEqfbU3w/KUQ1cuqngHr3GTQtnZMQI2BnRREp1CZMU0tAt4YmIRffwfkDRMHU/ABux0Crst4tl1DoPOA+r14I39uMkXB1neR3bTYZEJ90mbwXZG1zXxa7YzixFmLFw4f/4Aaj9R/y+T+/P4XCM+F5ipenHJ6V1h3pFJqzGN75Rr63TDldGEBabLL1S8T34Y06JjsjGDbFGPw54gG9f+ATbXZGIiip9Ko+IBdn4DD6qEGGLgYkXcj2RaFWtfZDcF4HP/PnWdgOCJv0pflDRG8zyc7a+BXwe5FQU0e/giRrr1JGzSzPCRP9C9OCKk0ZqCbDWH8wOj7MKOewEdSF2oAz7U4E5VSQYi7k4x6Oa1EcOpi5aqUzi6t3nTOIjjuODoKqle1g4zVtxWiG6l6FVYum1QqY7My8C9mY9AfNlRUkwAAAABJRU5ErkJggg==" />
+							</div>
+							<div class="col-10">
+								<h2>
+									Free
+								</h2>
+								<div class="d-flex">
+									<h3 class="text-danger">
+										0 $
+									</h3>
+									<span class="mt-2">/month</span>
+								</div>
+							</div>
+						</div>
+						<div class="row my-5">
+							<div class="col-lg-12 ">
+								<ul>
+									<li> Lorem ipsum dolor sit amet </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4"></div>
+					<div class="col-md-4"></div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- End Sub -->
 	</div>
 
-
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="js/jQuery.min.js"></script>
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.js"></script>
