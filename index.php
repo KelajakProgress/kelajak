@@ -199,7 +199,7 @@
 												<span class="text-secondary">Mentor</span>
 											</div>
 										</div>
-										<div class=" text-center mt-5 mb-2">
+										<div class="text-center mt-5 mb-2">
 											<button class="btn btn-danger">Access Class</button>
 										</div>
 									</div>
