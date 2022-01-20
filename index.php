@@ -61,7 +61,7 @@
 		<div class="row">
 			<div class="col-lg-7">
 				<div class="banner text-center">
-					<img src="head/img/Banner0.png" class="img-fluid">
+					<img src="img/Banner0.png" class="img-fluid">
 
 					<div class="student">
 						<img src="img/users/01.jpg" class="rounded-circle r-img" title="Alecsandr" />
