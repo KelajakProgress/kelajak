@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Snauw</title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -302,7 +302,7 @@
 
 		<!-- Start Carousel -->
 
-		<div class="row my-5">
+		<!-- <div class="row my-5">
 			<div class="col-md-12">
 				<div class="row my-5 text-center">
 					<div class="col-lg-12">
@@ -340,7 +340,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- End Carousel -->
 
@@ -359,43 +359,155 @@
 					</div>
 
 				</div>
-				<div class="row my-5">
-					<div class="col-md-4 pricing">
-						<div class="row">
-							<div class="col-2 mt-2">
-								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAe9JREFUSEvFlkFOwzAQRf+A95Qb0BPADShbaEUQQWJHuUE5AeUEwAkoO6SmUqqkbIETACeAI9A1EYNckipNM05iWtWrKPbM8x97xkNY0aAVcWENbvGxozcd0MC32bwVuMluA8BTDNwLyXuuCrcFa9BuDHsOydtbOtjh060I0UcapKDqPj18VoFXVtxit8fAWRpCwH1AXntp4Dy1CUwh2vTJ/yoLr6S4yW4XwKXg/CokT8+XGqXBDju1CEqfbU3w/KUQ1cuqngHr3GTQtnZMQI2BnRREp1CZMU0tAt4YmIRffwfkDRMHU/ABux0Crst4tl1DoPOA+r14I39uMkXB1neR3bTYZEJ90mbwXZG1zXxa7YzixFmLFw4f/4Aaj9R/y+T+/P4XCM+F5ipenHJ6V1h3pFJqzGN75Rr63TDldGEBabLL1S8T34Y06JjsjGDbFGPw54gG9f+ATbXZGIiip9Ko+IBdn4DD6qEGGLgYkXcj2RaFWtfZDcF4HP/PnWdgOCJv0pflDRG8zyc7a+BXwe5FQU0e/giRrr1JGzSzPCRP9C9OCKk0ZqCbDWH8wOj7MKOewEdSF2oAz7U4E5VSQYi7k4x6Oa1EcOpi5aqUzi6t3nTOIjjuODoKqle1g4zVtxWiG6l6FVYum1QqY7My8C9mY9AfNlRUkwAAAABJRU5ErkJggg==" />
-							</div>
-							<div class="col-10">
-								<h2>
-									Free
-								</h2>
-								<div class="d-flex">
-									<h3 class="text-danger">
-										0 $
-									</h3>
-									<span class="mt-2">/month</span>
+				<div class="row my-5 px-2">
+					<div class="col-md-4  p-3">
+						<div class="row zero">
+							<div class="col-lg-12">
+								<div class="row">
+									<div class="col-2 mt-2">
+										<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAe9JREFUSEvFlkFOwzAQRf+A95Qb0BPADShbaEUQQWJHuUE5AeUEwAkoO6SmUqqkbIETACeAI9A1EYNckipNM05iWtWrKPbM8x97xkNY0aAVcWENbvGxozcd0MC32bwVuMluA8BTDNwLyXuuCrcFa9BuDHsOydtbOtjh060I0UcapKDqPj18VoFXVtxit8fAWRpCwH1AXntp4Dy1CUwh2vTJ/yoLr6S4yW4XwKXg/CokT8+XGqXBDju1CEqfbU3w/KUQ1cuqngHr3GTQtnZMQI2BnRREp1CZMU0tAt4YmIRffwfkDRMHU/ABux0Crst4tl1DoPOA+r14I39uMkXB1neR3bTYZEJ90mbwXZG1zXxa7YzixFmLFw4f/4Aaj9R/y+T+/P4XCM+F5ipenHJ6V1h3pFJqzGN75Rr63TDldGEBabLL1S8T34Y06JjsjGDbFGPw54gG9f+ATbXZGIiip9Ko+IBdn4DD6qEGGLgYkXcj2RaFWtfZDcF4HP/PnWdgOCJv0pflDRG8zyc7a+BXwe5FQU0e/giRrr1JGzSzPCRP9C9OCKk0ZqCbDWH8wOj7MKOewEdSF2oAz7U4E5VSQYi7k4x6Oa1EcOpi5aqUzi6t3nTOIjjuODoKqle1g4zVtxWiG6l6FVYum1QqY7My8C9mY9AfNlRUkwAAAABJRU5ErkJggg==" />
+									</div>
+									<div class="col-10">
+										<h2>
+											Free
+										</h2>
+										<div class="d-flex">
+											<h3 class="text-danger">
+												0 $
+											</h3>
+											<span class="mt-2">/month</span>
+										</div>
+									</div>
+								</div>
+								<div class="row my-5">
+									<div class="col-lg-12">
+										<ul class="pricing mb-5">
+											<li> Lorem ipsum dolor sit amet </li>
+											<li> Lorem ipsum dolor sit amet </li>
+											<li> Lorem ipsum dolor sit amet </li>
+											<li> Lorem ipsum dolor sit amet </li>
+											<li> Lorem ipsum dolor sit amet </li>
+										</ul>
+										<div class="text-center mt-5">
+											<button class="btn btn-outline-danger">Your Current Package</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="row my-5">
-							<div class="col-lg-12 ">
-								<ul>
-									<li> Lorem ipsum dolor sit amet </li>
-								</ul>
+					</div>
+					<div class="col-md-4 p-3">
+						<div class="row zero">
+							<div class="col-lg-12">
+								<div class="row">
+									<div class="col-2 mt-2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXtJREFUSEvtlkFOwlAQQN8k3RsWkLiiboCdcAL1BtzAcgL1BHIEbmBv4BXqDWAHccPOBFiUHSTAmN+0ptQKBap1QZftMK/zZuYXoaBLCuJyBv+Z+bPq/6G68aE2FtW1Mn+vSD/Pt0rtcW2mbVGegWYC5smKzvBSxqe+xDdwfaY9lIddiQXuhmXxToFvgRsTdVR4CRPOEVwFTxQbaAM34TN/aXE1Lol/LHwLXJ+qSXQBzGVFM6k0YeNpVJbeyeCwr68mkSidYUXctKT1qZr+VoG+wGNW8MJiEDf0VXFjql0lGCiWFqWfNNYm6opwnxUYxSXnonjwEaoHkeqN4kQWTGWmyuS9hUU/VbUJjg2XLytaWYcr3qZRWQKLaffi7dm1TmbCXQSPDTYSrNNttGpLCzuqIFxDxzwblSWIOQgcVJ3hANkorX1H6MFgAw/73QWuE9P7JiucXzky46DwI2GvFX9fhUes16E/ySf+/A8kH48ZspxVZ5CUT0hhqj8Bc8+0H1hUCGcAAAAASUVORK5CYII=" /></div>
+									<div class="col-10">
+										<h2>
+											Express
+										</h2>
+										<div class="d-flex">
+											<h3 class="text-danger">
+												75 $
+											</h3>
+											<span class="mt-2">/month</span>
+										</div>
+									</div>
+								</div>
+								<div class="row my-5">
+									<div class="col-lg-12">
+										<ul class="pricing mb-5">
+											<li> Lorem ipsum dolor sit amet </li>
+											<li> Lorem ipsum dolor sit amet </li>
+											<li> Lorem ipsum dolor sit amet </li>
+											<li> Lorem ipsum dolor sit amet </li>
+											<li> Lorem ipsum dolor sit amet </li>
+										</ul>
+										<div class="text-center mt-5">
+											<button class="btn btn-outline-danger">Your Current Package</button>
+
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4"></div>
-					<div class="col-md-4"></div>
+					<div class="col-md-4 ">
+						<div class="row zero p-3">
+							<div class="col-lg-12">
+								<div class="row">
+									<div class="col-2 mt-2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAVhJREFUSEvtltFtg0AMhv+fSiW8dYRmg2SDZoH2NkiyQTtJukHpBpcJmg3KBs0IvJH0AVd3iIoLEGhIRKVgiQd0xp9tfoyJnow9ceGAJVH3GCEmddyUkIi6Mz5tfI2f8S/6HoIfQFnB56wpoOweI4DC0XramORehUgRMtCb3LcK/AEgOgYXE0hkboMQIf31sg7+6yuctQGbOJVwSdQClDcHJFwy0OEh3EnwD+ASXL7VBKl8VlbnccpbHeVnDtS+5PYV5zFs5fZmL18ArKgqLIbPsdFGCXoiOKs8s0mDkCIQEQSLkt8JFTeJtt35AC72SRJlBoj5js9vQ6uHVvcjLjuL09fzSxqA5z0XZ/n/2EAuUmlNUHcRyH57q4sk4PGlttVXOLmObRhd+y8cM9DbPExJ1bJTGpCnrhznefKdvnaWg8rPye7XgLm62w3ioqhqK+5Oahfh+gbID1UV7B9/WEw9AAAAAElFTkSuQmCC" /></div>
+									<div class="col-10">
+										<h2>
+											Premium
+										</h2>
+										<div class="d-flex">
+											<h3 class="text-danger">
+												120 $
+											</h3>
+											<span class="mt-2">/month</span>
+										</div>
+									</div>
+								</div>
+								<div class="row my-5">
+									<div class="col-lg-12">
+										<ul class="pricing mb-5">
+											<li> Lorem ipsum dolor sit amet </li>
+											<li> Lorem ipsum dolor sit amet </li>
+											<li> Lorem ipsum dolor sit amet </li>
+											<li> Lorem ipsum dolor sit amet </li>
+											<li> Lorem ipsum dolor sit amet </li>
+										</ul>
+										<div class="text-center mt-5">
+											<button class="btn btn-outline-danger">Your Current Package</button>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 			</div>
 		</div>
 
+
+		<div class="row my-5">
+			<div class="col-md-12 zero">
+				<div class="row">
+					<div class="col-lg-6">
+						<h1 class="m-5">
+							Get Our Apps, Now!
+						</h1>
+						<p class="ms-5">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus necessitatibus fuga rem porro quidem harum deleniti
+						</p>
+						<div class="d-md-flex">
+							<img src="img/logos/apple.png" class="cp">
+							<img src="img/logos/01.png" class="cp">
+						</div>
+					</div>
+					<div class="col-lg-6"></div>
+				</div>
+			</div>
+		</div>
+
 		<!-- End Sub -->
+
+		<!-- Start Footer -->
+
+		<div class="row mt-5">
+			<div class="col-md-4">
+				<h2 class="my-3 cp">Sinauw</h2>
+				<p class="text-secondary">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia dicta a officia.
+				</p>
+			</div>
+		</div>
+
+		<!--  -->
 	</div>
 
-	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="js/jQuery.min.js"></script>
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.js"></script>
