@@ -1,0 +1,23 @@
+<div class="row">
+
+    <div class="col-4 offset-4 my-5">
+        <div class="row">
+            <marquee behavior="" direction="right">
+                <h1>Tashrif buyurish</h1>
+            </marquee>
+        </div>
+        <form action="" method="post">
+
+
+            <label for="inp" class="mt-3"> Username :</label>
+            <input type="text" id="username"  placeholder="Username" class="form-control">
+
+            <label for="paro" class="mt-2"> Parol :</label>
+            <input type="password" id="password" placeholder="Password" class="form-control">
+
+
+            <button type="submit" id="btn" name="btn" class="btn btn-danger  mt-4">Jo'natish</button>
+        </form>
+    </div>
+
+</div>
