@@ -1,5 +1,9 @@
 <?php
     session_start();
+
+    if (isset($_SESSION['username'])){
+        $user = getUsers($_SESSION['username'], 'users');
+    }
 ?>
 
     <!-- Start navbar -->
@@ -50,8 +54,11 @@
                                     <?=$_SESSION['username']?>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="drp">
+                                    <li><a class="dropdown-item text-success" href="?view=profil&id=<?=$user['id']?>">Edit Profil</a></li>
                                     <li><a class="dropdown-item text-danger" href="?view=logout">LogOut</a></li>
+
                                 </ul>
+
                             </li>
 
                         <?php endif; ?>
@@ -83,7 +90,7 @@
 
                     <?php else: ?>
 
-                    <a href="?view=sign">
+                    <a href="?view=login">
                         <img class="rounded-circle r-img" title="Join us..." src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAV5JREFUSEuVVkEShCAMK69ZL+7/36EXf+NOAaFtArIedhyobUnSsEn0SSJy57f25KX+U9eTJLljqP8wZNEU7WNbxebu9esbaQjymFBfAD4ed82bCEisBHEMXuDCEwADJK+HCCgiKQoHNdISSPiV6zhuDd723XCHKrEoJ96FPX4Pv84zC+tTC7hEKMTWO5Ug4TqfQEt/vrseNoq6yT0WnujYb12nh2hFvkMOGOUNIjiBn1XkYOUMSeQ6LAceiCyQgSPAoGmiaU3dDTrS+KKuUJjhOC5wS9FXeWLDW4bOr5o+cCOaXSQZeFqCqPbWh248B9PZd1bBRG+E/myrijrWA5wCcEamzTHgbngAf7hxVkFgsdaNWpg4mLeKEWe+0eJFL3PwH0ThPliZMatJMLhRh47kFb1R5YdhIPbq7PqlmZzNynf6B6ByaQoQ0gh+pMlQGI2vpeHj4O9eKzIQHFn4AXVHzR5dlFvvAAAAAElFTkSuQmCC" />
                     </a>
 
@@ -104,10 +111,12 @@
             </p>
 
             <form class="d-flex btn-group my-5">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-secondary" type="submit">
-                    <img class="img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABDVJREFUWEetWN1x20gMBiJSr+cSrMwsGOXFTgUnV2Cngpw6cCq4pILkKjBTQZwKIlcQ+SUOlw9WOrCfHQk3IEFxlz9LKhPNeMbi7gLffgA+gEJofhAA2H/Y8WjMsdYe90GfTXQXxjgOGi0MjLGCgMDNexemPUC1MzU6xnYLoTo79KzaCQNynN3d3R1PJpNzRFww8zEAnOryGhE3zLzabrdf5vOXm1bMg8FrpwdAgBAF8i8A/DPSbrrdbt/PX843nTEZMCJQKrLKuGoeyP8/suwCEa8Q4KiR563oNiL3sGNeJklyXUeu79Z+PjmAfOjWWmHkysErkbgBgBQQ1mRoLWvWWgmd/Mn+vxsELIkoLZ+NKR8B11H22Y+Cmc+VIQS+BcRLY8wqxHie55JfHwHgpDrLvHudvEiux4bPAyRfvpfJ+80J020cx4vZbPbQCaZRTff390dPT08CXEHBQxzHs87zPZrnsWmtFYrfKMu3cRQA00NXDQpPtOI+EdGoovAYEnaiyeS+ijgAnhnyw9RK0h5QGr6vVfpsf21n8/l8M1SpJSCtrDy3l8z8QR/cUEKLsbHvcmStldAViY6Ib40xkl+NT1eV6bWzLLtGxHM9sa+QVqhHqrBbqcz8JUmSC6/YOm7hhSy3ds0IJypGr4jK0v4tQAhgs/wUgL+p3zURveoC5AmC+8Vau9c/IlKwI+loCFb1tdumrvZWma7XhxGITKlSge49BqoD6JGIjrpyqO596Hd7a62EqNIPDVm/2yFAquJVyG6IaDGk2l4OFUn9DM+lshBgafay3yqM7obeaFeS1AhwpST/R0SXlaWafP9aTtkD5HmuZV8cWxHR2ZBuhNatzVcArGUPb40hLfsw63ubOmoUwqjacbbvXweWmieMAI9xHB3PZs+1/YwEJCCq1qFH1nEcn3X3sX6j2jpEpYshjnf8PnmRvBvDtpNDpQNlSZL7L+VpHcdRD6i2ixYY5p/T6fTUv9QBDImLrBzMdPwonMqYKtLvjR/NvqZh+oAAp5WgIeK1Mea1D70PUNc8VGuSP6CVz1fMnCLibaXiUtrMfIKIsl/LusVcSkTLvpB5St3a5KwqUzKOaPjGZAEAM/9UVqu+KA0oJTJ7UH014ulQlzvJqWgyecfVjBTG9CgT43Q6/Th7PnuwmTNblT0xNQVTPT1D9K9JV7tTaLJ/vzuO4snFbscLRJTXIFH0R2FC2dhEUZQ2k9faTGbwN9KC9CUiJRMO32Acgi2tPz/3au5NoaW3NCFaepd3VH4PqMVWJZDt1/3GJYa6Wq1vzsGORG9UWYuJYT+D7NYbEHKbpU4u6gAY6GUHWA8wFI6hhk/6pL6vtRWqM+ndbU0B/H3gwye9sg8mb4etw/b3/wTTvPww7NAOpzq89/9g/o3qZYEfkXqq7A/nfCETZcjGWB5Q0GETwzsEyv/9EfA4V4gNQAAAAABJRU5ErkJggg==" />
-                </button>
+                <div class="input-group">
+                    <input class="form-control zero" type="search" placeholder="Search..." aria-label="Search" />
+                    <button class="btn btn-outline-secondary" type="submit">
+                        <img class="img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABDVJREFUWEetWN1x20gMBiJSr+cSrMwsGOXFTgUnV2Cngpw6cCq4pILkKjBTQZwKIlcQ+SUOlw9WOrCfHQk3IEFxlz9LKhPNeMbi7gLffgA+gEJofhAA2H/Y8WjMsdYe90GfTXQXxjgOGi0MjLGCgMDNexemPUC1MzU6xnYLoTo79KzaCQNynN3d3R1PJpNzRFww8zEAnOryGhE3zLzabrdf5vOXm1bMg8FrpwdAgBAF8i8A/DPSbrrdbt/PX843nTEZMCJQKrLKuGoeyP8/suwCEa8Q4KiR563oNiL3sGNeJklyXUeu79Z+PjmAfOjWWmHkysErkbgBgBQQ1mRoLWvWWgmd/Mn+vxsELIkoLZ+NKR8B11H22Y+Cmc+VIQS+BcRLY8wqxHie55JfHwHgpDrLvHudvEiux4bPAyRfvpfJ+80J020cx4vZbPbQCaZRTff390dPT08CXEHBQxzHs87zPZrnsWmtFYrfKMu3cRQA00NXDQpPtOI+EdGoovAYEnaiyeS+ijgAnhnyw9RK0h5QGr6vVfpsf21n8/l8M1SpJSCtrDy3l8z8QR/cUEKLsbHvcmStldAViY6Ib40xkl+NT1eV6bWzLLtGxHM9sa+QVqhHqrBbqcz8JUmSC6/YOm7hhSy3ds0IJypGr4jK0v4tQAhgs/wUgL+p3zURveoC5AmC+8Vau9c/IlKwI+loCFb1tdumrvZWma7XhxGITKlSge49BqoD6JGIjrpyqO596Hd7a62EqNIPDVm/2yFAquJVyG6IaDGk2l4OFUn9DM+lshBgafay3yqM7obeaFeS1AhwpST/R0SXlaWafP9aTtkD5HmuZV8cWxHR2ZBuhNatzVcArGUPb40hLfsw63ubOmoUwqjacbbvXweWmieMAI9xHB3PZs+1/YwEJCCq1qFH1nEcn3X3sX6j2jpEpYshjnf8PnmRvBvDtpNDpQNlSZL7L+VpHcdRD6i2ixYY5p/T6fTUv9QBDImLrBzMdPwonMqYKtLvjR/NvqZh+oAAp5WgIeK1Mea1D70PUNc8VGuSP6CVz1fMnCLibaXiUtrMfIKIsl/LusVcSkTLvpB5St3a5KwqUzKOaPjGZAEAM/9UVqu+KA0oJTJ7UH014ulQlzvJqWgyecfVjBTG9CgT43Q6/Th7PnuwmTNblT0xNQVTPT1D9K9JV7tTaLJ/vzuO4snFbscLRJTXIFH0R2FC2dhEUZQ2k9faTGbwN9KC9CUiJRMO32Acgi2tPz/3au5NoaW3NCFaepd3VH4PqMVWJZDt1/3GJYa6Wq1vzsGORG9UWYuJYT+D7NYbEHKbpU4u6gAY6GUHWA8wFI6hhk/6pL6vtRWqM+ndbU0B/H3gwye9sg8mb4etw/b3/wTTvPww7NAOpzq89/9g/o3qZYEfkXqq7A/nfCETZcjGWB5Q0GETwzsEyv/9EfA4V4gNQAAAAABJRU5ErkJggg==" />
+                    </button>
+                </div>
             </form>
 
             <p class="text-secondary">Suggestions</p>

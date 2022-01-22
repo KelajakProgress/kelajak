@@ -20,8 +20,11 @@ $(document).ready(function (){
         $.post('views/moduls/signtest.php', {username:$("#username").val(), password:$("#password").val()}, function (f){
             if (f == 1){
                 window.location="index.php";
-            } else {}
-            alert("Tashrifingiz  uchun Rahmat!")
+            } else {
+                alert("Parol yoki Username Xato!")
+            }
+
         })
     })
+
 })

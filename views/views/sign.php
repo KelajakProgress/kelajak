@@ -1,9 +1,11 @@
-<div class="row">
-
+<div class="row mt-5">
+    <div class="text-end">
+        <a href="?view=login" class="btn btn-outline-danger">Create Account</a>
+    </div>
     <div class="col-4 offset-4 my-5">
         <div class="row">
             <marquee behavior="" direction="right">
-                <h1>Tashrif buyurish</h1>
+                <h1>Sign In</h1>
             </marquee>
         </div>
         <form action="" method="post">

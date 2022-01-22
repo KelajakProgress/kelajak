@@ -125,4 +125,20 @@ function insert($db_name, $table, $col_name, $val)
         }
     }
 }
+
+function getUsers($u, $table)
+{
+    $db = connect('db');
+
+    $check = $db->query("SELECT *FROM {$table} WHERE username='{$u}'");
+
+    if ($check->num_rows > 0) {
+
+
+        return $check->fetch_assoc();
+    } else {
+        return false;
+    }
+}
+
 // echo insert('for_lessons', 'users', ['username', 'mail', 'password', 'img', 'status'], ['valiyev', 'vali.com', '741', '852', 'online']);

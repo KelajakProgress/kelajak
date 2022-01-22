@@ -6,27 +6,27 @@
 			<div class="col-4 offset-4 my-5">
 				<div class="row">
 					<marquee behavior="" direction="right">
-						<h1>Ro'yhatdan o'tish</h1>
+						<h1>Create Account</h1>
 					</marquee>
 				</div>
 				<form action="views/moduls/send.php" method="post">
-					<label for="ism"> Ism Familiyangiz :</label>
-					<input type="text" id="fullname" placeholder="Toliq Ismingizni kiriting" name="fulname" class="form-control">
+					<label for="ism"> Fullname:</label>
+					<input type="text" id="fullname" placeholder="Fullname..." name="fulname" class="form-control">
 
 					<label for="inp" class="mt-3"> Email :</label>
-					<input type="email" placeholder="Emailingizni kiriting" name="email" class="form-control">
+					<input type="email" placeholder="Email..." name="email" class="form-control">
 
 					<label for="inp" class="mt-3"> Username :</label>
-					<input type="text" id="user" placeholder="Username yarating" name="username" class="form-control">
+					<input type="text" id="user" placeholder="Create username" name="username" class="form-control">
                     <p class="text-danger" id="usern"></p>
 
-					<label for="paro" class="mt-2"> Parol :</label>
-					<input type="password" id="password" placeholder="Parol yarating" name="parol" class="form-control">
+					<label for="paro" class="mt-2"> Password:</label>
+					<input type="password" id="password" placeholder="Create password" name="parol" class="form-control">
 
-					<label for="par" class="mt-3"> Parolni tasdiqlang :</label>
-					<input type="password" id="password2" placeholder="Parolni tasdiqlang" name="password" class="form-control">
+					<label for="par" class="mt-3"> Password :</label>
+					<input type="password" id="password2" placeholder="Password" name="password" class="form-control">
 
-					<button type="submit" name="btn" class="btn btn-danger btn-block mt-4">Jo'natish</button>
+					<button type="submit" name="btn" class="btn btn-danger btn-block mt-4">Create Account</button>
 				</form>
 			</div>
 		</div>
