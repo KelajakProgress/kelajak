@@ -28,7 +28,7 @@
                     <li><a class="dropdown-item" href="#">Rus</a></li>
                 </ul>
             </li>
-            <?php if (!isset($_SESSION['username'])):  ?>
+            <?php if (!isset($_SESSION['username'])) :  ?>
                 <li class="nav-item">
                     <a href="?view=sign" class="btn btn-outline-danger">Signin</a>
 
@@ -36,14 +36,14 @@
                 <li class="nav-item">
                     <a href="?view=login" class="btn btn-danger mr">Login</a>
                 </li>
-            <?php else:?>
+            <?php else : ?>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-capitalize" href="#" id="drp" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <?=$_SESSION['username']?>
+                        <?= $_SESSION['username'] ?>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="drp">
-                        <li><a class="dropdown-item text-success" href="?view=profil&id=<?=$user['id']?>">Edit Profil</a></li>
+                        <li><a class="dropdown-item text-success" href="?view=profil&id=<?= $user['id'] ?>">Edit Profil</a></li>
                         <li><a class="dropdown-item text-danger" href="?view=logout">LogOut</a></li>
 
                     </ul>
