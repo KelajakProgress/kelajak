@@ -1,6 +1,6 @@
 <?php
 include_once 'header.php';
-
+include_once 'menu.php';
 if (!isset($_GET['view']) || $_GET['view'] == 'home'){
     include $c['base']['path'].'views/home.php';
 } else{

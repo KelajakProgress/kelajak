@@ -1,8 +1,6 @@
 
 		<div class="row">
-			<div class="col-12 mt-3 text-right">
-				<a href="?view=sign" class="btn btn-outline-danger">Sign up</a>
-			</div>
+
 			<div class="col-4 offset-4 my-5">
 				<div class="row">
 					<marquee behavior="" direction="right">
@@ -26,7 +24,7 @@
 					<label for="par" class="mt-3"> Password :</label>
 					<input type="password" id="password2" placeholder="Password" name="password" class="form-control">
 
-					<button type="submit" name="btn" class="btn btn-danger btn-block mt-4">Create Account</button>
+					<button type="submit" id="btn" name="btn" class="btn btn-danger btn-block mt-4">Create Account</button>
 				</form>
 			</div>
 		</div>

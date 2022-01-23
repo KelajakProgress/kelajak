@@ -24,9 +24,6 @@
 
 
 <div class="row">
-    <div class="text-end">
-        <a href="?view=logout" class="btn btn-outline-danger mt-lg-5 me-5">Log Out</a>
-    </div>
     <div class="col-4 offset-4 my-5">
 
         <div class="row">

@@ -17,3 +17,7 @@
 <body class="bg-dark">
 
 <div class="container">
+
+    <!-- Start navbar -->
+    <div class="row mt-md-2">
+        <div class="col m-auto">

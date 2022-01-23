@@ -23,8 +23,6 @@ $(document).ready(function (){
             } else {
                 alert("Parol yoki Username Xato!")
             }
-
         })
     })
-
 })
